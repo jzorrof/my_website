@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="GB18030">
+    <title></title>
+</head>
+<body>
+{% for subdata in testdata %}
+    {% for i, j in subdata.iteritems() %}
+    <h1>{{ i|e }}</h1>
+    <h2>{{ j|e }}</h2>
+    {% endfor %}
+{% endfor %}
+</body>
+</html>
