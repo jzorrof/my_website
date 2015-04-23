@@ -39,5 +39,5 @@ def qiche():
     return render_template('qiche.html' , testdata=testdata)
 
 if __name__ == '__main__':
-    get_from_s3()
-    app.run(debug = True)
+    #get_from_s3()
+    app.run(debug = True, host='0.0.0.0', port=8080)
