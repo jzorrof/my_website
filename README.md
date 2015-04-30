@@ -6,8 +6,9 @@ Test page
 Uwsgi Config
 -----
 uwsgi -x config/my_uwsgiconf.xml --enable-threads
-nginx:
 
+nginx:
+-----
 >server {
 >	listen 80;
 >	server_name demo3.jzorrof.info;
