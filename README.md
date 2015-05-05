@@ -13,8 +13,8 @@ nginx:
 >	listen 80;
 >	server_name demo3.jzorrof.info;
 >
->	location / {
->		include uwsgi_params;
->		uwsgi_pass 127.0.0.1:3031;
+>	location / {<br>
+>		include uwsgi_params;<br>
+>		uwsgi_pass 127.0.0.1:3031;<br>
 >	}
 >}
