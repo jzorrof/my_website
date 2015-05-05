@@ -22,7 +22,7 @@ def get_from_s3():
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('layout.html')
 
 @app.route("/qiche")
 def qiche():
