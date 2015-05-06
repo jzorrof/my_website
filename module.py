@@ -3,7 +3,7 @@ __author__ = 'joe_fan'
 """
 mongodb module
 """
-URL = ''
+URL = 'mongodb://127.0.0.1:27017/test'
 
 from pymongo import MongoClient
 from pymongo import ASCENDING, DESCENDING
