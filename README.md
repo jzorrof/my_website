@@ -1,20 +1,26 @@
 Test page
 -----
-1.这是一个flask bootstrap 通过heroku部署的DEMO
-2.现在也同时可部署与EC2
+1. 这是一个flask bootstrap 通过heroku部署的DEMO
+2. 现在也可部署于EC2
 
-Uwsgi Config
+Heroku Config
 -----
+web: gunicorn mywebsite:app
+
+EC2
+----
+
+1. Uwsgi Config:<br>
 uwsgi -x config/my_uwsgiconf.xml --enable-threads
 
-nginx:
------
+2. nginx:<br>
+
 >server {
 >	listen 80;
->	server_name demo3.jzorrof.info;
+>	server_name [domain];
 >
 >	location / {<br>
 >		include uwsgi_params;<br>
->		uwsgi_pass 127.0.0.1:3031;<br>
+>		uwsgi_pass [ip]:[port];<br>
 >	}
 >}
