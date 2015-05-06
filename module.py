@@ -22,9 +22,4 @@ def dbqurey():
     )
     return cursor
 
-cursor = dbqurey()
-
-for i in cursor:
-    print i
-
 
