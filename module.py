@@ -1,4 +1,4 @@
-# -*- coding: uft-8 -*-
+# -*- coding: utf-8 -*-
 __author__ = 'joe_fan'
 """
 mongodb module
