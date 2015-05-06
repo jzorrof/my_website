@@ -13,7 +13,7 @@ def dbconnction(url=''):
     return client
 
 def dbqurey():
-    db =dbconnction(URL)
+    db =dbconnction(URL).test
     cursor = db.restaurants.find().sort(
     [
         ("borough", ASCENDING),
