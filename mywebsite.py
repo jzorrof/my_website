@@ -26,6 +26,7 @@ def index():
 
 @app.route("/qiche")
 def qiche():
+    get_from_s3()
     testdata=[]
     try:
         with open("getjson.json") as jsf:
@@ -40,5 +41,4 @@ def qiche():
     return render_template('qiche.html' , testdata=testdata)
 
 if __name__ == '__main__':
-    get_from_s3()
     app.run(debug = True)
